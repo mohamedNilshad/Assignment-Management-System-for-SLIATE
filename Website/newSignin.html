@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html>
+   <head>
+     <meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <meta name="keywords" content="footer, address, phone, icons" />
+     
+      <link rel="stylesheet" href="newmember.css">
+    
+   </head>
+   <body>
+<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+		
+		
+			<div class="signup">
+		<form action="validation.php"  method="post" target="blank">
+		
+					<label for="chk" aria-hidden="true">Sign up</label>
+					
+			<table border="0px">
+				<tr>
+					<td width="275px">
+						<input type="text" name="name" placeholder="NAME"  required"}>
+
+						<input type="text" name="reg_num" placeholder="Reg Num e.g:(KAN/IT/2020/F/0000)"  required 
+						pattern="(KAN|kan)\/(IT|M|E|A|BA|THM|it|m|e|a|ba|thm)\/([0-9]{4})\/[F|P|f|p]\/[0-9]{4}" 
+						title="Letters Should be UPPERCASE, e.g:KAN/IT/2020/F/0000 ">
+
+						<input type="password" name="pass" placeholder="Password" required  pattern=".{8,}" title="Eight or more characters">
+						
+					</td>
+					<td width="275px">
+						<input type="text" name="nicnum" placeholder="N.I.C Number"  required pattern="([0-9]{9}\Vv)|([0-9]{12})">
+						<input type="email" name="email" placeholder="Email Address" required>
+						
+						<input type="password" name="c_pass" placeholder="Confirm Password" required  pattern=".{8,}" title="Eight or more characters">
+						
+					</td>
+				</tr>
+				
+				
+			</table>
+					<button name='signup'>Sign up</button>
+		</form>
+			</div>
+		
+			<div class="login">
+				<form action="validation.php" method="post" target="_blank">
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="text" name="reg_num" placeholder="Registration Number e.g:(KAN/IT/2020/F/0000)"  required>
+					<input type="password" name="pass" placeholder="Password" required>
+					
+					<div class = "txt">
+						
+							<a href="forgot.php" style="text-decoration: none"><font color="red">Forget Password ?</font></a>
+	
+					</div>
+					<button name ="Login" >Login</button>
+					
+				</form>
+			</div>
+	</div>
+	
+	
+	
+   </body>
+</html>
+
+<!--
+

@@ -1,0 +1,164 @@
+<html>
+	<head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--for phone divece-->
+		<link rel="stylesheet" href="navi.css">
+		<link rel="stylesheet" href="up.css">	
+		
+	</head>
+
+<body>
+
+<!--Navigation Bar -->
+<table style="width:100%" border="0" collapse="0">
+	<tr  style="height:20px">
+		<th  width="1%">
+		</th>
+		<th  width="5%" align="left">
+			<img src="images/logo.png" height="40px" width="40px"></a>
+		</th>
+		
+		<th width="6%">	
+			<div class="navbar">
+				<a href="m_main.html">Home</a>
+			</div>	
+		</th>
+		
+
+		
+		<th width="10%">
+			<div class="navbar">
+				<a href="mini.html"> Mini Course</a>
+			</div>	
+		</th>
+		
+		<th width="11%">		
+			<div class="navbar">
+				<a href="ask_the_expert.html"> Ask the Expert </a>
+			</div>	
+		</th>
+		
+		<th width="7%">
+			<div class="navbar">
+				<a href="notification.html" class="notification">
+					<span><img src="images/bell.png" height="25px" width="25px"></span>
+					<span class="badge">0</span>
+				</a>
+			</div>	
+		</th>
+		
+		<th width="7%">
+			<div class="navbar">
+				<a class="active" href="upload.html"> <img src="images/upload_i.png" height="25px" width="25px"></a>
+			</div>	
+		</th>
+		
+		<th width="7.1%" style="background-color:#2568FB;">	
+			<div class="navbar">
+				<a href="D:\0. Sliate\Assinments\2nd sem\Human\parted\commen user\main.html"><font color="white"><b>LOG OUT</b></font></a>
+			</div>	
+		</th>
+		
+		
+		
+		<th >
+			<div class="topnav">
+				<div class="search-container">
+					<form action="#">
+						<input type="text" placeholder="Search.." name="search">
+						<button type="submit"><i>search</i></button>
+					</form>
+				</div>
+			</div>
+		</th>
+	</tr>
+</table>
+
+
+<!-- From -->
+
+<div class="login-box">
+  <h2>Upload Your Project Files Here</h2>
+
+
+  <form action="miniup.php" method="post" name="upload"  enctype="multipart/form-data">
+
+
+    <div class="user-box">
+      <input type="text" name="name" required="" pattern="[A-z]{3,30} [A-z]{3,30}">
+      <label><font size="2.5px">Name eg:(firstname lastname)</font></label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="regno" required="" required pattern="KAN/IT/2020/F/[0-9]{4}">
+      <label><font size="2.5px">Registration Number eg:(KAN/IT/2020/F/0000)</font></label>
+    </div>
+
+
+	
+	<div class="user-box">
+      <input type="email" name="email" required="">
+      <label>Your email</label>
+    </div>
+	
+	<div class="user-box">
+      <input type="phone" name="phone" required="" pattern="[0-9]{10}">
+      <label>Your phone number</label>
+    </div>
+	
+
+<select class="minimal" name="course">
+  <option value="" disabled selected hidden>Course Name</option>
+  <option>Higher National Diploma in Accountancy - (HNDA)</option>
+  <option>Higher National Diploma in Business Administration - (HNDBA)</option>
+  <option>Higher National Diploma in English - (HNDE)</option>
+  <option>Higher National Diploma in Information Technology - (HNDIT)</option>
+  <option>Higher National Diploma in Management - (HNDM)</option>
+  <option>Higher National Diploma in Tourism and Hospitality Management (HNDTHM)</option>
+</select>
+
+<br><br>
+
+<select class="minimal" name="subcode">
+  <option value="" disabled selected hidden>Subject Code</option>
+  <option>Code 1</option>
+  <option>Code 2</option>
+  <option>Code 3</option>
+  <option>Code 4</option>
+  <option>Code 5</option>
+  <option>Code 6</option>
+  <option>Code 7</option>
+  
+</select>
+	
+
+<select class="minimal" name="lecture"> 
+  <option value="" disabled selected hidden>Select Subject Lecturer</option>
+  <option>Lecturer 1</option>
+  <option>Lecturer 2</option>
+  <option>Lecturer 3</option>
+  <option>Lecturer 4</option>
+  <option>Lecturer 5</option>
+  <option>Lecturer 6</option>
+  
+</select>
+
+<br><br>
+
+<div class="upload-btn-wrapper">
+  <button class="btn">Upload Project Files</button>
+  
+  <input type="file" name="file" multiple="multiple">
+</div>
+	
+<br><br>
+
+
+<input type="submit" name="submit" value="submit"> 
+  </form>
+</div>
+
+
+</body>
+</html>
+
+
+
